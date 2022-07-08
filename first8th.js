@@ -27,12 +27,13 @@ function loopExe(){
 	var a = 0;
 	var b = document.getElementById('text').value;
 	var c = document.getElementById('text1').value;
-	var t= 'Lokesh ';
+	var t= '<table class="table table-dark"><tbody>';
 //////// for loop operation perform//////
 	for(a=1; a<=c; a++){ 
 	
-	t= t +'<br/>' + a + ' ' + ' x ' + ' '+  b +' ' + '=' + ' ' +( a * b);		
+	t= t +'<tr><td>' + a + ' </td><td>' + ' x ' + '</td><td>'+  b +' </td><td>' + '=' + '</td><td> ' +( a * b) + '</td></tr>';		
 	}
+	t = t + '</tbody></table>';
 	document.getElementById('id1').innerHTML='value is '+ t;	
 	
 	console.log(t);
