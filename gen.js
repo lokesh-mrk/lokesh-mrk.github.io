@@ -11,7 +11,7 @@ function gen(){
 function gen2(){
 	var num1 = document.getElementById('t1').value;
 	var num2 = document.getElementById('t2').value;
-	var str  = '<table class="table table-hover">';
+	var str  = '<table class="table table-dark">';
 	console.log(str);
 	
     for(i=num1; i<=num2; i++){
